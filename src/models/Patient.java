@@ -1,42 +1,39 @@
 package models;
 
 public class Patient {
-    private String nom;
-    private String prenom;
-    private String telephone;
-    private int age;
-    private double poids;
-    private double taille;
-    private String allergies;
+    // our attributes :3
+    private int id;
+    private String fname;
+    private String lname;    
+    private String birthDate;
+    private String medicalHistory;
+    private String surgicalHistory;
 
-    public Patient(String nom, String prenom, String telephone, int age, double poids, double taille, String allergies) {
-        this.nom = nom;
-        this.prenom = prenom;
-        this.telephone = telephone;
-        this.age = age;
-        this.poids = poids;
-        this.taille = taille;
-        this.allergies = allergies;
+    // our constructor :3
+    public Patient(int id, String fname, String lname, String birthDate, String medicalHistory, String surgicalHistory) {
+        this.id = id;
+        this.fname = fname;
+        this.lname = lname;
+        this.birthDate = birthDate;
+        this.medicalHistory = medicalHistory;
+        this.surgicalHistory = surgicalHistory;
     }
 
-    public String getNom() {
-        return nom;
+    //some necessary getters :3
+    public int getId() {
+        return id;
+    }
+    public String getFname() {
+        return fname;
+    }
+    public String getLname() {
+        return lname;
     }
 
-    public String getPrenom() {
-        return prenom;
-    }
-
+    //toString method to display our patient objet :3
     @Override
     public String toString() {
-        return "Patient{" +
-                "nom='" + nom + '\'' +
-                ", prenom='" + prenom + '\'' +
-                ", telephone='" + telephone + '\'' +
-                ", age=" + age +
-                ", poids=" + poids +
-                ", taille=" + taille +
-                ", allergies='" + allergies + '\'' +
-                '}';
+        return "ID: " + id + "\nFull name: " + fname +" "+ lname + "\nDate of Birth: " + birthDate +
+               "\nMedical History: " + medicalHistory + "\nSurgical History: " + surgicalHistory;
     }
 }
