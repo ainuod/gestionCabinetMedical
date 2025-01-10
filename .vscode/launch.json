@@ -8,6 +8,48 @@
             "type": "java",
             "name": "MedicalManagement",
             "request": "launch",
+            "mainClass": "main.controller.MedicalManagement",
+            "projectName": "Cabinet Medical_85561f4c"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "main.gui.Main",
+            "projectName": "Cabinet Medical_85561f4c"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "main.gui.Main",
+            "projectName": "Cabinet Medical_9433f3b9"
+        },
+        {
+            "type": "java",
+            "name": "GuiGui",
+            "request": "launch",
+            "mainClass": "main.gui.GuiGui",
+            "projectName": "Cabinet Medical_9433f3b9"
+        },
+        {
+            "type": "java",
+            "name": "MedicalManagement",
+            "request": "launch",
+            "mainClass": "main.controller.MedicalManagement",
+            "projectName": "Cabinet Medical_9433f3b9"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "main.Main",
+            "projectName": "Cabinet Medical_9433f3b9"
+        },
+        {
+            "type": "java",
+            "name": "MedicalManagement",
+            "request": "launch",
             "mainClass": "main.java.main.MedicalManagement",
             "projectName": "Cabinet Medical_9433f3b9"
         },
