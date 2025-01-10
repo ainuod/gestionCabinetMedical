@@ -8,24 +8,21 @@ public class MainGui extends JFrame {
     private CardLayout cardLayout;
     private JPanel cardPanel;
 
-    // Private constructor for Singleton pattern
+
     private MainGui() {
         setTitle("Medical Management System");
-        setSize(1440, 1024);
+        setSize(1440, 824);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLocationRelativeTo(null); // Center the window
+        setLocationRelativeTo(null);
 
-        // Prevent resizing
         setResizable(false);
 
-        // Set up CardLayout to switch between panels
+
         cardLayout = new CardLayout();
         cardPanel = new JPanel(cardLayout);
 
-        // Add WelcomePanel as the first panel
         cardPanel.add(new WelcomePanel(), "Welcome");
 
-        // Add the main panel (initially empty)
         cardPanel.add(new JPanel(), "Main");
 
         add(cardPanel);
@@ -33,7 +30,6 @@ public class MainGui extends JFrame {
         setVisible(true);
     }
 
-    // Singleton getInstance method
     public static MainGui getInstance() {
         if (instance == null) {
             instance = new MainGui();

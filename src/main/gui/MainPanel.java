@@ -21,15 +21,15 @@ public class MainPanel extends JPanel {
         //this.mainGui = mainGui.getInstance();
         setLayout(new BorderLayout());
 
-        ImageIcon background = new ImageIcon("images/welcome_bg.png");
-        JLabel backgroundLabel = new JLabel(background);
-        add(backgroundLabel);
+        //ImageIcon background = new ImageIcon("images/welcome_bg.png");
+        //JLabel backgroundLabel = new JLabel(background);
+        //add(backgroundLabel);
 
         // Create buttons for the 6 options
         JPanel buttonPanel = new JPanel();
-        buttonPanel.setOpaque(false);  // Make the button panel transparent
-        buttonPanel.setLayout(new GridLayout(3, 2, 20, 20));  // Set grid layout for buttons
-        buttonPanel.setBackground(new Color(0, 0, 0, 0));
+        buttonPanel.setOpaque(true); 
+        buttonPanel.setLayout(new FlowLayout(FlowLayout.CENTER, 30, 30));  // Set grid layout for buttons
+        buttonPanel.setBackground(new Color(8, 188, 184, 100));
 
         JButton addPatientButton = createOptionButton("Add Patient");
         JButton scheduleAppointmentButton = createOptionButton("Schedule Appointment");
@@ -38,16 +38,41 @@ public class MainPanel extends JPanel {
         JButton viewMedicalRecordButton = createOptionButton("View Medical Record");
         JButton exitButton = createOptionButton("Exit");
 
-        // Add buttons to the button panel
+
         buttonPanel.add(addPatientButton);
+        addPatientButton.setPreferredSize(new Dimension(500,100));
+        addPatientButton.setBackground(new Color(255, 255, 255));
+        addPatientButton.setBorder(BorderFactory.createLineBorder(new Color(2, 154, 152), 5)); 
+
         buttonPanel.add(scheduleAppointmentButton);
+        scheduleAppointmentButton.setPreferredSize(new Dimension(500,100));
+        scheduleAppointmentButton.setBackground(new Color(255, 255, 255));
+        scheduleAppointmentButton.setBorder(BorderFactory.createLineBorder(new Color(2, 154, 152), 5)); 
+
         buttonPanel.add(viewAppointmentsButton);
+        viewAppointmentsButton.setPreferredSize(new Dimension(500,100));
+        viewAppointmentsButton.setBackground(new Color(255, 255, 255));
+        viewAppointmentsButton.setBorder(BorderFactory.createLineBorder(new Color(2, 154, 152), 5)); 
+
         buttonPanel.add(addConsultationButton);
+        addConsultationButton.setBackground(new Color(255, 255, 255));
+        addConsultationButton.setPreferredSize(new Dimension(500,100));
+        addConsultationButton.setBorder(BorderFactory.createLineBorder(new Color(2, 154, 152), 5)); 
+
         buttonPanel.add(viewMedicalRecordButton);
+        viewMedicalRecordButton.setBackground(new Color(255, 255, 255));
+        viewMedicalRecordButton.setPreferredSize(new Dimension(500,100));
+        viewMedicalRecordButton.setBorder(BorderFactory.createLineBorder(new Color(2, 154, 152), 5)); 
+
         buttonPanel.add(exitButton);
+        exitButton.setPreferredSize(new Dimension(500,100));
+        exitButton.setBackground(new Color(255, 255, 255));
+        exitButton.setBorder(BorderFactory.createLineBorder(new Color(2, 154, 152), 5)); 
+        //exitButton.setBorder(BorderFactory.createRoundBorder(20));
 
         // Add the button panel to the main panel
         add(buttonPanel, BorderLayout.CENTER);
+
     }
 
     
