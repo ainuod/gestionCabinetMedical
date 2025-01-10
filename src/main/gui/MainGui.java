@@ -37,7 +37,6 @@ public class MainGui extends JFrame {
         return instance;
     }
 
-    // Method to show the Main Panel based on the selected language
     public void showMainPanel(String language) {
         // Remove the current main panel and add a new one based on the language
         cardPanel.remove(1); // Remove the existing "Main" panel
