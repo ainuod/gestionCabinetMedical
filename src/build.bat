@@ -15,7 +15,11 @@ javac -d bin ^
     src\main\models\Consultation.java ^
     src\main\models\MedicalRecord.java ^
     src\main\models\Patient.java ^
-    src\main\gui\GuiGui.java
+    src\main\gui\Main.java ^
+    src\main\gui\MainGui.java ^
+    src\main\gui\MainPanel.java ^
+    src\main\gui\WelcomePanel.java 
+   
 
 if %errorlevel% neq 0 (
     echo Compilation failed.

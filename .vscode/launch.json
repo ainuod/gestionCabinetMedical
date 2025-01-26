@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "main.gui.Main",
+            "projectName": "Cabinet Medical_be36023c"
+        },
+        {
+            "type": "java",
             "name": "MedicalManagement",
             "request": "launch",
             "mainClass": "main.controller.MedicalManagement",
